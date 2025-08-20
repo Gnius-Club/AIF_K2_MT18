@@ -1,24 +1,262 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Playbook - Preescolar Sesión 18</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
+<header>
+<h1><span class="book-icon">📋</span> <strong>Playbook Sesión 18 Kínder 2</strong></h1>
+<div class="header-widgets">
+<div class="timer-container">
+<span id="timer">⏱️ 00:00</span>
+<button id="startStop">Start</button>
+<button id="reset">Reset</button>
+</div>
+<div class="theme-toggle">
+<i class="fas fa-sun"></i>
+<label class="switch">
+<input type="checkbox" id="theme-toggle-input">
+<span class="slider round"></span>
+</label>
+<i class="fas fa-moon"></i>
+</div>
+</div>
+</header>
+<div class="main-container">
+<aside class="activity-list">
+<h2>Actividades</h2>
+<ul>
+<li><a href="#activity-0">📝</a></li>
+<li><a href="#activity-1">1</a></li>
+<li><a href="#activity-2">2</a></li>
+<li><a href="#activity-3">3</a></li>
+<li><a href="#activity-4">4</a></li>
+</ul>
+<div class="sidebar-info">
+<p>💡 Cada actividad está diseñada para ser lúdica y captar la atención de los más pequeños.</p>
+<p>⏱️ Los tiempos son una guía. Sé flexible y adáptate al ritmo del grupo.</p>
+</div>
+</aside>
+<main class="content">
+<div class="progress-bar">
+<div class="progress"></div>
+</div>
+<button id="toggle-dialogues">Mostrar todos los diálogos</button>
+<div class="activity-card" id="activity-0">
+<h2><span class="book-icon">📝</span> De un Vistazo: Misión: ¡Activando Nuestro Circuito de Ayuda!</h2>
+<p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para esta aventura de aprendizaje.</p>
+<div class="overview-table-container">
+<table>
+<thead>
+<tr>
+<th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+<th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<strong>Objetivos de Aprendizaje:</strong>
+<ul>
+<li>Identificar errores ("bugs") entre el plan y el comportamiento real.</li>
+<li>Depurar el programa (cambiar la posición de los ladrillos o las vías).</li>
+<li>Refinar la narrativa y la decoración del circuito.</li>
+</ul>
+<strong>Secuencia Didáctica de la Misión:</strong>
+<ul>
+<li>⚡ Actividad 1: Bienvenida y Calentamiento Cerebral</li>
+<li>⚡ Actividad 2: Planteamiento del Reto y Cuento</li>
+<li>⚡ Actividad 3: ¡Manos a la Obra! (Actividad Principal)</li>
+<li>⚡ Actividad 4: Puesta en Común y Cierre de la Misión</li>
+</ul>
+<strong>Entregable Clave:</strong>
+<ul>
+<li>Un circuito de ayuda de la comunidad que funciona a la perfección, ¡listo para impresionar a todos!</li>
+<li>Identificación y corrección creativa de cualquier "bug" que se interponga en nuestra misión.</li>
+<li>Narrativa y decoración del circuito totalmente afinadas, ¡contando una historia increíble!</li>
+</ul>
+</td>
+<td>
+<strong>Materiales Específicos:</strong>
+<ul>
+<li>Circuitos construidos.</li>
+<li>Todos los materiales de LEGO disponibles.</li>
+</ul>
+<strong>Preparación Previa para ESTA Sesión:</strong>
+<ol>
+<li><strong>Revisión de Materiales:</strong> Asegurar que todos los materiales estén completos, limpios y listos para ser repartidos.</li>
+<li><strong>Preparación del Espacio:</strong> Organizar el aula para facilitar la actividad (círculo en el suelo, mesas de trabajo, espacio para moverse).</li>
+<li><strong>Familiarización:</strong> Leer el playbook completo para entender el flujo narrativo, los diálogos y las transiciones. Tener clara la historia o el reto que se presentará.</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="activity-card" id="activity-1">
+<h2>⚡ Actividad 1: ¡Despertando a Nuestros Circuitos Amigos! ⏰ 5 min</h2>
+<p>Preparamos nuestra mente y energía para una sesión de ingenio y solución de misterios.</p>
+<div class="steps">
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 1: El Gran Objetivo del Día ⏰ 3 min</h3>
+<p>Saluda a los niños con entusiasmo. Recuérdales la importancia de sus circuitos de ayuda y presenta el reto de hoy: hacer que funcionen ¡perfectamente! Refuerza que hoy serán detectives y magos de la ingeniería. (Proyectar Diapositiva 1)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">¡Hola, superingenieros y detectives del futuro! ¿Están listos para una misión emocionante? Hoy es un día crucial para nuestros Circuitos de Ayuda de la Comunidad. ¿Saben qué vamos a hacer? ¡Vamos a asegurarnos de que funcionen como un reloj suizo, sin ninguna falla! ¡Seremos los mejores "arreglatodo" de la galaxia!</p>
+</div>
+</div>
+</div>
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 2: Recordando Nuestra Aventura ⏰ 2 min</h3>
+<p>Anima a los niños a recordar lo que construyeron en la sesión anterior, conectando esa experiencia con el objetivo de hoy de perfeccionar sus creaciones. (Proyectar Diapositiva 2)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Equipo de constructores y pensadores, antes de sumergirnos en nuestra nueva misión, ¿quién me puede recordar qué fue lo más emocionante que construimos la última vez? ¡Sus circuitos de ayuda son increíbles! Hoy vamos a darles un toque mágico para que funcionen perfectamente y ayuden mucho a nuestra comunidad. ¿Listos para la aventura?</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="activity-card" id="activity-2">
+<h2>⚡ Actividad 2: Detectives de Errores: ¿Qué Pasa Aquí? ⏰ 5 min</h2>
+<p>Nos convertimos en verdaderos detectives para observar nuestros circuitos y descubrir dónde se esconde algún "bug" travieso.</p>
+<div class="steps">
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 1: Revisando Nuestro Proyecto ⏰ 3 min</h3>
+<p>Pide a cada equipo que observe su circuito. Anima a los niños a identificar si hay algo que no funciona como esperaban o si creen que algo podría mejorar. Puedes hacer preguntas clave como un consultor técnico. (Proyectar Diapositiva 3)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">¡Equipo, es hora de poner nuestros ojos de águila! Miren bien sus circuitos, ¿se acuerdan cómo imaginamos que iba a funcionar? ¿Qué creen que está pasando? ¿Hay algún "ladrillito" juguetón que no quiere hacer su trabajo? ¡No se preocupen, hoy vamos a ser como los mejores doctores de robots y vamos a curar cualquier "bug" que encontremos! ¡Justo como un consultor técnico les preguntaría: "¿Qué dice su plan que debería pasar aquí? ¿Y qué está pasando en realidad?" ¡A investigar!</p>
+</div>
+</div>
+</div>
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 2: ¡A Cazar Bugs Traviesos! ⏰ 2 min</h3>
+<p>Guía a los niños para que señalen y describan el "bug" o el área que necesita mejora. Fomenta la verbalización de lo que observan. (Proyectar Diapositiva 4)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">¡Excelente observación, detectives! Ahora que hemos usado nuestros ojos de águila, ¿quién puede decirme dónde creen que se esconde el 'bug' más travieso? ¿Está en un ladrillo que no gira, en una vía que no lleva el tren a su lugar, o quizás en algo que no se ve como lo imaginamos? ¡Vamos a señalarlo con el dedo y a pensar juntos en cómo atraparlo!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="activity-card" id="activity-3">
+<h2>⚡ Actividad 3: Taller de Magia y Soluciones: ¡Arreglando el Mundo! ⏰ 25 min</h2>
+<p>Es el momento de usar nuestra creatividad y lógica para solucionar los desafíos de nuestros circuitos y embellecer nuestras historias.</p>
+<div class="steps">
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 1: ¡Manos a la Obra con la Depuración! ⏰ 7 min</h3>
+<p>Guía a los equipos para que prueben y depuren sus circuitos. Anímales a mover piezas, cambiar ladrillos, o ajustar vías si es necesario. Recuérdales que no hay errores, ¡solo oportunidades para aprender! (Proyectar Diapositiva 5)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">¡Manos a la obra, superingenieros! ¡A trabajar en equipo para que nuestro circuito funcione perfecto! Si un ladrillo no se porta bien, ¿qué podemos hacer? ¡Claro, podemos probar otro o cambiarlo de lugar! Si la vía está un poco rebelde, ¡la ajustamos! ¡Ustedes son los maestros de la solución! ¡Cada ajuste es un paso más hacia la perfección de nuestro circuito de ayuda!</p>
+</div>
+</div>
+</div>
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 2: Trabajo en Equipo: ¡Juntos Somos Más Fuertes! ⏰ 8 min</h3>
+<p>Fomenta la colaboración entre los miembros del equipo. Anímales a compartir ideas, probar soluciones juntos y celebrar cada pequeño avance. (Proyectar Diapositiva 6)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">¡Superingenieros, recuerden que en esta misión somos un gran equipo! Si alguien encuentra un 'bug' un poco difícil de atrapar, ¡levante la mano y pidamos ayuda a nuestros compañeros! Dos, tres o más cabezas piensan mejor que una. ¡Compartan sus ideas, prueben diferentes soluciones juntos y celebren cada pequeño logro! ¡Ustedes son los verdaderos solucionadores de problemas!</p>
+</div>
+</div>
+</div>
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 3: ¡A Embellecer Nuestra Misión! ⏰ 6 min</h3>
+<p>Mientras algunos niños se enfocan en la funcionalidad, invita a otros a refinar la decoración de sus circuitos con más bloques Duplo y figuras. Fomenta que la decoración cuente la historia de su circuito. (Proyectar Diapositiva 7)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">¡Y no olvidemos la magia de la historia! Mientras nuestros ingenieros están arreglando los "bugs", ¿qué les parece si convertimos nuestro circuito en un cuento visual? ¡Podemos agregar más bloques Duplo, poner figuritas que cuenten una aventura! ¿Qué historia queremos que cuente nuestro circuito? ¡Vamos a hacer que luzca increíble y que su mensaje sea clarísimo!</p>
+</div>
+</div>
+</div>
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 4: Contando Historias con Bloques ⏰ 4 min</h3>
+<p>Pregunta a los equipos sobre la narrativa que están creando con su decoración. Anímales a pensar en cómo cada pieza contribuye a la historia de su circuito de ayuda. (Proyectar Diapositiva 8)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">¡Artistas de la decoración, ahora que nuestros circuitos funcionan de maravilla, es hora de darles vida con historias! Cada Duplo, cada figura de persona, cada color que elijan, ¡puede contar una parte de la aventura de su circuito de ayuda! ¿Qué historia queremos que nuestro circuito cuente a todos los que lo vean? ¡Dejen volar su imaginación y hagan que su circuito sea una obra de arte y una historia al mismo tiempo!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="activity-card" id="activity-4">
+<h2>⚡ Actividad 4: ¡Misión Cumplida: El Gran Ensayo! ⏰ 5 min</h2>
+<p>Celebramos nuestros logros y preparamos nuestros circuitos para la gran presentación, ¡mostrando cómo ayudan a la comunidad!</p>
+<div class="steps">
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 1: El Gran Ensayo General ⏰ 2 min</h3>
+<p>Pide a cada equipo que realice un "ensayo general" de su circuito. Observa que todo funcione correctamente y que la narrativa esté clara. Felicita su esfuerzo y trabajo en equipo. (Proyectar Diapositiva 9)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">¡Atención, atención, equipo de súperhéroes! ¡Es momento de nuestro gran ensayo general! Cada equipo, muestre cómo funciona su increíble circuito. ¿Está todo listo? ¿Funciona como lo soñamos? ¡Guau, estoy tan orgulloso de su trabajo! ¡Son unos verdaderos genios!</p>
+</div>
+</div>
+</div>
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 2: ¡Celebrando el Éxito y el Aprendizaje! ⏰ 1 min</h3>
+<p>Reconoce el esfuerzo de los niños y enfatiza el aprendizaje clave sobre la resolución de problemas y la depuración. (Proyectar Diapositiva 10)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">¡Bravo, bravo, superingenieros! ¡Observen qué bien funcionan sus circuitos! ¿Se dieron cuenta de que hoy aprendimos algo súper importante? Aprendimos a ser detectives de problemas, a encontrar qué no funcionaba y a pensar en soluciones creativas. ¡Eso es ser un verdadero científico e ingeniero! ¡Cada uno de ustedes es un experto en resolver misterios!</p>
+</div>
+</div>
+</div>
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 3: ¡Misión Exitosa y Despedida! ⏰ 2 min</h3>
+<p>Felicita a todos por su arduo trabajo y la mejora de sus circuitos. Recuérdales la importancia de la depuración y la perseverancia. Cierra la sesión con una nota positiva, anticipando la próxima presentación. (Proyectar Diapositiva 11)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">¡Increíble, equipo! ¡Misión de depuración y refinamiento, CUMPLIDA! ¿Qué fue lo más divertido de arreglar nuestros circuitos hoy? ¿Y qué aprendimos sobre ser detectives de problemas? ¡Son unos campeones! ¡Nuestros circuitos de ayuda están listos para brillar! ¡Nos vemos en la próxima aventura para compartir estas maravillas!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<script src="script.js"></script>
 </body>
-
 </html>
